@@ -30,6 +30,9 @@ def get_avg_discharge_rates(data):
         avg_discharge_rates[station] = sum(discharge_rates[station]) / len(discharge_rates[station])
     return avg_discharge_rates
 
+# if this script is executed from the command line.
+# run the main() function;
+# if its imported into another file, dont
 def main():
     data = get_raw_data()
     avg_discharge_rates = get_avg_discharge_rates(data)
